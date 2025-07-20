@@ -3,8 +3,8 @@ import React from 'react';
 const DateRangePicker = ({ value, onChange }) => {
   return (
     <div className="date-range-picker">
-     <div>
-      <label>
+     <div style={{ marginBottom: '12px' }}>
+      <label style={{ display: 'block' }}>
         Start Date:
         <input
           type="date"
@@ -14,7 +14,7 @@ const DateRangePicker = ({ value, onChange }) => {
       </label> 
             </div>
             <div>
-      <label>
+      <label style={{ display: 'block' }}>
         End Date (optional):
         <input
           type="date"
