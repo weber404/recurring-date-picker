@@ -3,6 +3,7 @@ import React from 'react';
 const DateRangePicker = ({ value, onChange }) => {
   return (
     <div className="date-range-picker">
+     <div>
       <label>
         Start Date:
         <input
@@ -10,7 +11,9 @@ const DateRangePicker = ({ value, onChange }) => {
           value={value.start ? value.start.split('T')[0] : ''}
           onChange={e => onChange({ ...value, start: e.target.value })}
         />
-      </label> <br/>
+      </label> 
+            </div>
+            <div>
       <label>
         End Date (optional):
         <input
@@ -18,7 +21,7 @@ const DateRangePicker = ({ value, onChange }) => {
           value={value.end ? value.end.split('T')[0] : ''}
           onChange={e => onChange({ ...value, end: e.target.value })}
         />
-      </label>
+      </label> </div>
     </div>
   );
 };
