@@ -10,7 +10,7 @@ const DateRangePicker = ({ value, onChange }) => {
           value={value.start ? value.start.split('T')[0] : ''}
           onChange={e => onChange({ ...value, start: e.target.value })}
         />
-      </label>
+      </label> <br/>
       <label>
         End Date (optional):
         <input
