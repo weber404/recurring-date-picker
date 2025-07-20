@@ -6,6 +6,7 @@ const DateRangePicker = ({ value, onChange }) => {
      <div style={{ marginBottom: '12px' }}>
       <label style={{ display: 'block' }}>
         Start Date:
+        <br />
         <input
           style={{ display: 'block', marginTop: '4px' }}
           type="date"
@@ -17,6 +18,7 @@ const DateRangePicker = ({ value, onChange }) => {
             <div>
       <label style={{ display: 'block' }}>
         End Date (optional):
+        <br />
         <input
           style={{ display: 'block', marginTop: '4px' }}
           type="date"
